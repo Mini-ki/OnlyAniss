@@ -1,0 +1,178 @@
+body{
+    font-family: Arial, sans-serif;
+    color: brown;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 10% 20%; 
+}
+
+.gifBubu_1 {
+    width: 30%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.kalimat {
+    font-size: 30px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-weight: bold;
+    overflow: hidden;
+    
+}
+
+.kalimat-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.pilihan {
+    margin-left: 0;
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pilihan button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid pink;
+    background: pink;
+    transition: background 0.2s;
+}
+
+.pilihan button:hover {
+    background: pink;
+}
+
+.gifBubu_1[src="Assets/img/bubu_baik.gif"] {
+    margin-left: -20px;
+}
+
+.gifBubu_1[src="Assets/img/bubu_gabaik.gif"] {
+    margin-left: -20px;
+}
+
+.pilihan2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    min-height: 50px;
+}
+
+.pilihan2 button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 6px 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid pink;
+    background: pink;
+    transition: background 0.2s, left 0.2s, top 0.2s;
+    position: relative; /* <-- penting! */
+}
+
+#btnGa {
+    /* JANGAN pakai position: absolute di CSS */
+    left: 0;
+    top: 0;
+}
+
+.inputPesan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.inputPesan input[type="text"] {
+    font-size: 18px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid pink;
+    outline: none;
+    width: 220px;
+    transition: border 0.2s;
+}
+
+.inputPesan input[type="text"]:focus {
+    border: 1.5px solid pink;
+}
+
+.inputPesan button {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 1px solid pink;
+    background: pink;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.inputPesan button:hover {
+    background: pink;
+}
+
+.bx bx-send {
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .parent {
+        flex-direction: column;
+        width: 98vw;
+        margin: 10px auto;
+        align-items: center;
+    }
+    .gifBubu_1 {
+        width: 60vw;
+        max-width: 220px;
+        margin: 0 auto 16px auto;
+    }
+    .kalimat-wrapper {
+        margin-left: 0;
+        width: 95vw;
+        align-items: center;
+    }
+    .kalimat {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .pilihan, .pilihan2, .inputPesan {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    .inputPesan input[type="text"] {
+        width: 80vw;
+        min-width: 0;
+        font-size: 16px;
+    }
+    .inputPesan button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
