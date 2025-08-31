@@ -138,11 +138,11 @@ body{
     color: white;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
     .parent {
         flex-direction: column;
         width: 98vw;
-        margin: 10px auto;
+        margin: 100px auto;
         align-items: center;
     }
     .gifBubu_1 {
@@ -175,4 +175,4 @@ body{
         width: 100%;
         font-size: 16px;
     }
-} */
+}
