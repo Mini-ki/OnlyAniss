@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const kalimatList2 = [
         "HMMM, BOLEHH NANYAA GAA??",
         "BOLEHH GAA.....",
-        "KALOKK KENAL LEBIH DEKAT??",
+        "KALOKK KITA TEMENANN LEBIH DEKAT??",
     ];
     const kalimatList3 = [
         "YEYYY MAKASIII YAAAAA",
